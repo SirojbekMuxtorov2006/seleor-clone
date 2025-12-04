@@ -1,3 +1,5 @@
+import { Banknote, Barcode, Heart, Settings2, Shuffle, User } from 'lucide-react';
+
 export const products = [
 	{
 		_id: '1',
@@ -23,6 +25,32 @@ export const products = [
 		category: 'Category 3',
 		price: 300000,
 	},
+
+	{
+		_id: '4',
+		title: 'Product 4',
+		description: 'Description 4',
+		image: '/4.webp',
+		category: 'Category 4',
+		price: 400000,
+	},
+
+	{
+		_id: '5',
+		title: 'Product 5',
+		description: 'Description 5',
+		image: '/5.webp',
+		category: 'Category 5',
+		price: 500000,
+	},
+	{
+		_id: '6',
+		title: 'Product 6',
+		description: 'Description 6',
+		image: '/6.webp',
+		category: 'Category 6',
+		price: 600000,
+	},
 ];
 
 export const categories = [
@@ -33,4 +61,19 @@ export const categories = [
 	'Books',
 	'Accessories',
 	'Universal',
+];
+
+export const dashboardSidebar = [
+	{ name: 'Personal Information', route: '/dashboard', icon: User },
+	{ name: 'Orders', route: '/dashboard/orders', icon: Shuffle },
+	{ name: 'Payments', route: '/dashboard/payments', icon: Banknote },
+	{ name: 'Watch list', route: '/dashboard/watch-list', icon: Heart },
+	{ name: 'Settings', route: '/dashboard/settings', icon: Settings2 },
+];
+
+export const adminSidebar = [
+	{ name: 'Customers', icon: User, route: '/admin' },
+	{ name: 'Products', icon: Barcode, route: '/admin/products' },
+	{ name: 'Orders', icon: Shuffle, route: '/admin/orders' },
+	{ name: 'Payments', icon: Banknote, route: '/admin/payments' },
 ];

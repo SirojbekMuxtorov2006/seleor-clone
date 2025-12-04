@@ -7,11 +7,12 @@ import { FC } from 'react';
 import { Button } from '../ui/button';
 import { Heart } from 'lucide-react';
 import { formatPrice } from '@/lib/utils';
-import NoSSR from 'react-no-ssr';
+import NoSSR from '../NoSSR'; // ✅ yangisini import qildik
 
 interface Props {
 	product: Partial<IProduct>;
 }
+
 const ProductCard: FC<Props> = ({ product }) => {
 	const router = useRouter();
 
